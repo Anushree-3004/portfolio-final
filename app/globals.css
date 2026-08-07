@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ------------------------------------------------------------------ */
+/*  Custom fonts (all loaded locally from /public/fonts)              */
+/* ------------------------------------------------------------------ */
 @font-face {
   font-family: 'Homemade Apple';
   src: url('/fonts/Homemade_Apple/HomemadeApple-Regular.ttf') format('truetype');
@@ -74,33 +77,51 @@
   font-display: swap;
 }
 
-:root {
-  --portfolio-bg: #f7f4ed;
-  --portfolio-cream: #fbf9f5;
-  --portfolio-sand: #e6dfd1;
-  --portfolio-dark: #222222;
-  --portfolio-accent: #c84b31;
-  --portfolio-muted: #716e68;
+@font-face {
+  font-family: 'Irish Grover';
+  src: url('/fonts/Irish_Grover/IrishGrover-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-body {
+@font-face {
+  font-family: 'Kapakana';
+  src: url('/fonts/Kapakana/Kapakana-VariableFont_wght.ttf') format('truetype-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Jim Nightshade';
+  src: url('/fonts/Jim_Nightshade/JimNightshade-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Colour tokens sampled directly from the PDF                       */
+/* ------------------------------------------------------------------ */
+:root {
+  --portfolio-bg: #FBFCEE;        /* pale cream/paper */
+  --portfolio-cream: #FBF9F0;
+  --portfolio-orange: #E2700C;    /* bright orange used in title, sun, body */
+  --portfolio-dark-red: #92290F;  /* dark red-brown for "Portfolio" */
+  --portfolio-sand: #e6dfd1;
+  --portfolio-dark: #1c1c1c;
+  --portfolio-muted: #7a6a5c;
+}
+
+html, body {
   background-color: var(--portfolio-bg);
   color: var(--portfolio-dark);
-  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-family: 'IBM Plex Serif', serif;
   overflow-x: hidden;
 }
 
-/* Custom scrollbar styling for Behance editorial feel */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  background: var(--portfolio-bg);
-}
-::-webkit-scrollbar-thumb {
-  background: var(--portfolio-sand);
-  border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: var(--portfolio-muted);
-}
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--portfolio-bg); }
+::-webkit-scrollbar-thumb { background: var(--portfolio-sand); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--portfolio-muted); }
