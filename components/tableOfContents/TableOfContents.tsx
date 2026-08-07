@@ -99,7 +99,7 @@ export default function TableOfContents() {
             top: y(244.4),
             fontFamily: '"IM Fell DW Pica SC", "IM Fell DW Pica", serif',
             fontWeight: 400,
-            fontSize: pt(15),
+            fontSize: pt(16),
             lineHeight: 1,
             color: 'var(--portfolio-orange)',
             whiteSpace: 'nowrap',
@@ -113,14 +113,16 @@ export default function TableOfContents() {
           style={{
             position: 'absolute',
             left: pt(69),
-            top: y(229),
+            top: y(226),
             fontFamily: '"Instrument Serif", "IBM Plex Serif", serif',
             fontStyle: 'italic',
             fontWeight: 400,
-            fontSize: pt(26),
+            fontSize: pt(41),
             lineHeight: 1,
             color: 'var(--portfolio-orange)',
             whiteSpace: 'nowrap',
+            transform: 'scaleX(0.68) scaleY(1.1)',
+            transformOrigin: 'left center',
           }}
         >
           of
@@ -134,7 +136,7 @@ export default function TableOfContents() {
             top: y(244.4),
             fontFamily: '"IM Fell DW Pica SC", "IM Fell DW Pica", serif',
             fontWeight: 400,
-            fontSize: pt(15),
+            fontSize: pt(16),
             lineHeight: 1,
             color: 'var(--portfolio-orange)',
             whiteSpace: 'nowrap',
@@ -156,7 +158,7 @@ export default function TableOfContents() {
                 fontWeight: 700,
                 fontSize: pt(5.5),
                 lineHeight: 1,
-                letterSpacing: '0.04em',
+                letterSpacing: '0.02em',
                 color: c.color,
                 whiteSpace: 'nowrap',
               }}
